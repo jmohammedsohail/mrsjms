@@ -9,7 +9,7 @@ import requests
 
 df1 = pd.read_csv('./model/netflix_titles.csv')
 
-df1['combined'] = df1['description']+df1['cast']+df1['director']+df1['genre']+df1['country']
+df1['combined'] = df1['description']+df1['cast']+df1['director']+df1['listed_in']+df1['country']
 # df1['combined'].head(5)
 
 from sklearn.feature_extraction.text import TfidfVectorizer
